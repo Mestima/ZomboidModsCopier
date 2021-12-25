@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="281.0" prefWidth="483.0" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.mestima.zomboidmodscopier.CopierController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Label prefHeight="18.0" prefWidth="376.0" text="Путь до папки Steam\steamapps\workshop\content\108600" />
+      <TextField id="pathName" fx:id="pathName" />
+      <Label prefHeight="18.0" prefWidth="125.0" text="Имя пользователя" />
+      <TextField id="userName" fx:id="userName" />
+      <ProgressBar id="progress" fx:id="progress" prefHeight="26.0" prefWidth="443.0" progress="0.0" />
+      <Button id="copyBtn" fx:id="copyBtn" mnemonicParsing="false" onAction="#onCopy" prefHeight="33.0" prefWidth="443.0" text="Копировать" />
+   </children>
+</VBox>
