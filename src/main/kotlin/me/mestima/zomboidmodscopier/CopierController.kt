@@ -38,10 +38,11 @@ class CopierController {
                 val subfolder = File("$path\\$it")
                 subfolder.copyRecursively(dest, true)
 
-                queue.release()
                 if (it == lst.last()) {
                     progress.progress = 100.0
                 }
+
+                queue.release()
             }.start()
         }
     }
