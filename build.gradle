@@ -8,7 +8,7 @@ plugins {
 }
 
 group 'me.mestima'
-version '1.0'
+version '2.0'
 mainClassName = 'me.mestima.zomboidmodscopier.ZomboidCopierKt'
 
 repositories {
